@@ -1,0 +1,45 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    # Look for `package.json` and `lock` files in the root directory
+    directory: "/"
+    schedule:
+      # Check for updates to npm packages weekly
+      interval: "weekly"
+      day: "monday" # Optional: specify the day
+      time: "09:00" # Optional: specify the time (UTC)
+      timezone: "Asia/Jakarta" # Optional: specify your timezone
+    # Labels for Dependabot PRs
+    labels:
+      - "dependencies"
+      - "dependabot"
+    # Reviewers for Dependabot PRs
+    reviewers:
+      - "recky-a"
+    # Assignees for Dependabot PRs
+    assignees:
+      - "recky-a"
+    # Commit message preferences
+    commit-message:
+      prefix: "chore(deps)" # Conventional commit prefix
+      include: "scope"
+    # Group patch and minor updates for less noise
+    groups:
+      next-js-dependencies: # Group Next.js related packages
+        patterns:
+          - "next"
+          - "@next/*"
+          - "react"
+          - "react-dom"
+      tailwind-dependencies: # Group Tailwind CSS related packages
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/*"
+          - "postcss"
+      dev-dependencies:
+        dependency-types:
+          - "development"
+        update-types:
+          - "minor"
+          - "patch"
