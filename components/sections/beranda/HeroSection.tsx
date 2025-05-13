@@ -43,7 +43,13 @@ const heroImages = [
 ];
 
 // Helper component for animated text (optional, but cleans up main component)
-function AnimatedText({ children, delay = 0 }) {
+function AnimatedText({
+  children,
+  delay = 0,
+}: {
+  children: React.ReactNode;
+  delay?: number;
+}) {
   return (
     <div
       className="animate-fade-in-up opacity-0"
