@@ -1,93 +1,109 @@
-# Parai Beach Resort & Spa - Web Experience
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Next.js](https://img.shields.io/badge/Next.js-15.3.2-black?logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.0.0-blue?logo=react)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
-
-Welcome to the official repository for the Parai Beach Resort & Spa website! This project showcases a modern, responsive, and elegant web experience for guests to explore our resort, view accommodations, browse facilities, and make bookings.
-
-The live deployed version can be viewed at: [https://parai-web.vercel.app/](https://parai-web.vercel.app/)
+# <div align="center">🏖️ Parai Beach Resort & Spa - Web Experience 🌊</div>
 
 <p align="center">
-   <img src="public/images/screenshots/homepage.png" alt="Parai Resort Homepage Showcase">
-  <em><p align="center">*Tampilan Halaman Utama Parai Resort*</p></em>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-15.3.2-black?logo=next.js" alt="Next.js"></a>
+  <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/React-19.0.0-blue?logo=react" alt="React"></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?logo=tailwind-css" alt="Tailwind CSS"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" alt="TypeScript"></a>
 </p>
 
-## ✨ Features
+<p align="center">
+  Welcome to the official web experience for <a href="https://parai-web.vercel.app/">Parai Beach Resort & Spa</a>! ✨ Explore our beautiful resort, discover luxurious accommodations, browse our top-notch facilities, and start planning your dream getaway.
+</p>
 
-This website offers a comprehensive look into Parai Beach Resort & Spa, featuring:
+<p align="center">
+   <a href="https://parai-web.vercel.app/">
+     <img src="public/images/screenshots/homepage.png" alt="Parai Resort Homepage Showcase" width="80%">
+   </a>
+  <em><p align="center">*A glimpse of the Parai Resort Homepage*</p></em>
+</p>
 
-- **Stunning Hero Section:** An engaging carousel on the homepage dynamically showcasing the beauty and allure of Parai Resort. _(app/page.tsx, components/sections/beranda/HeroSection.tsx)_
-- **Detailed Room & Suite Listings:** Explore various accommodations with descriptions, image placeholders, amenities, and pricing. Each room type can be viewed, and users can initiate a booking process. _(app/kamar-suite/page.tsx, lib/data.ts)_
-- **Facility Showcase:** Discover the wide range of resort amenities, including the private beach, outdoor swimming pool, restaurant & bar, spa & fitness services, and meeting/event spaces. _(app/fasilitas/page.tsx)_
-- **Interactive Photo Gallery:** A visually appealing gallery where users can browse categorized images (Pantai, Fasilitas, Kamar, Kuliner, Aktivitas, Resort) of the resort and its surroundings, with a lightbox feature for larger image viewing. _(app/galeri/page.tsx, lib/data.ts)_
-- **Booking System Interface:** A user-friendly form allowing guests to check room availability based on check-in/check-out dates, number of adults/children, and preferred room type. The interface provides feedback on availability (demo functionality). _(app/booking/page.tsx, app/booking/\_content.tsx)_
-- **Guest Testimonials:** A carousel displaying real or sample feedback from satisfied guests, enhancing trust and appeal. _(components/sections/beranda/TestimonialCarousel.tsx, lib/data.ts)_
-- **Contact & Location Information:** A dedicated contact page with a form for direct messages, detailed contact information (address, phone, email), and an embedded Google Map for easy navigation to the resort. _(app/kontak-kami/page.tsx)_
-- **Newsletter Subscription:** An elegant component allowing users to subscribe to receive updates, special offers, and exclusive news. _(components/global/NewsletterSignup.tsx)_
-- **Responsive Design:** Fully optimized for a seamless and intuitive user experience across desktops, tablets, and mobile devices. _(app/globals.css, various components)_
-- **Dark Mode Theme:** Supports both light and dark themes, allowing users to choose their preferred visual mode, with easy toggling. _(components/mode-toggle.tsx, components/theme-provider.tsx)_
-- **WhatsApp Floating Action Button (FAB):** A persistent button providing quick access for users to initiate a WhatsApp chat for inquiries. _(components/global/WhatsAppFAB.tsx)_
-- **Share Functionality:** Users can share pages like "Kontak Kami" via various social media platforms. _(components/sections/beranda/ShareButtons.tsx)_
+## 🚀 Key Features
 
-## 🚀 Tech Stack
+This website is designed to provide a comprehensive and delightful experience, showcasing:
 
-This project is built with a modern and robust technology stack:
+- **🖼️ Engaging Homepage Hero:** A dynamic carousel that immediately captures the essence and beauty of Parai Resort.
 
-- **Frontend Framework:** [Next.js 15.3.2](https://nextjs.org/) (with Turbopack for development) _(package.json)_
-- **UI Library:** [React 19.0.0](https://reactjs.org/) _(package.json)_
-- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/) _(tailwind.config.ts, app/globals.css)_
-- **Language:** [TypeScript 5](https://www.typescriptlang.org/) _(tsconfig.json)_
-- **UI Components:** [Shadcn UI](https://ui.shadcn.com/) (as per `components.json` and `components/ui/` structure)
-- **Icons:** [Lucide React](https://lucide.dev/) _(package.json, various components)_
-- **Linting:** ESLint (configured in `eslint.config.mjs`)
-- **Animations:** `tw-animate-css` for Tailwind-friendly Animate.css integration. _(package.json, app/globals.css)_
-- **Carousels:** `embla-carousel-react` and associated plugins (`embla-carousel-autoplay`, `embla-carousel-auto-height`) for smooth and interactive carousels. _(package.json, components/ui/carousel.tsx)_
-- **Date Handling:** `date-fns` for date utilities. _(package.json, app/booking/\_content.tsx)_
-- **Social Sharing:** `react-share` for easy content sharing. _(package.json, components/sections/beranda/ShareButtons.tsx)_
+- **🛌 Elegant Accommodations:** Detailed listings of our rooms and suites, complete with vivid descriptions, image placeholders, comprehensive amenities, and transparent pricing. Start your booking journey here!
 
-## 🛠️ Getting Started
+- **🏢 facilities** **Unparalleled Resort Facilities:** Discover the extensive amenities that await you, from our pristine private beach and refreshing outdoor swimming pool to our exquisite restaurant & bar, rejuvenating spa & fitness services, and versatile meeting/event spaces.
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+- **🏞️ Visual Gallery:** Immerse yourself in the beauty of Parai Resort through our categorized image gallery (Beach, Facilities, Rooms, Dining, Activities, Resort). Enjoy a lightbox feature for a closer look at each moment.
+
+- **🗓️ Seamless Booking Interface:** An intuitive form that allows guests to easily check room availability based on their desired check-in/check-out dates, number of guests, and preferred room type. _(Demo functionality for availability)_
+
+- **🗣️ Guest Experiences:** A rotating carousel featuring authentic or sample testimonials from our delighted guests, building trust and showcasing the Parai experience.
+
+- **🗺️ Contact & Location Made Easy:** A dedicated page with a direct contact form, comprehensive contact details (address, phone, email), and an integrated Google Map to guide you to our paradise.
+
+- **✉️ Stay Updated:** An elegantly designed newsletter signup component, inviting guests to subscribe for the latest updates, exclusive offers, and exciting news from Parai Resort.
+
+- **📱 Fully Responsive:** Experience a seamless and intuitive website across all devices – desktops, tablets, and smartphones.
+
+- **🌙 Dark Mode Option:** Enjoy the flexibility of switching between light and dark themes for a comfortable browsing experience, day or night.
+
+- **💬 Instant Inquiry:** A convenient WhatsApp Floating Action Button (FAB) for quick and easy communication with our team.
+
+- **📤 Effortless Sharing:** Easily share the "Contact Us" page with friends and family via various social media platforms.
+
+## 🛠️ Built With
+
+This project leverages a cutting-edge technology stack for optimal performance and a delightful user experience:
+
+- **Frontend Framework:** [Next.js](https://nextjs.org/) `15.3.2` _(Powered by Turbopack)_
+- **UI Library:** [React](https://reactjs.org/) `19.0.0`
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) `4`
+- **Language:** [TypeScript](https://www.typescriptlang.org/) `5`
+- **Component Library:** [Shadcn UI](https://ui.shadcn.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Code Quality:** ESLint
+- **Animations:** `tw-animate-css`
+- **Carousels:** [`embla-carousel-react`](https://www.embla-carousel.com/react/) & Plugins (`embla-carousel-autoplay`, `embla-carousel-auto-height`)
+- **Date Utilities:** [`date-fns`](https://date-fns.org/)
+- **Social Sharing:** [`react-share`](https://github.com/nygardk/react-share)
+
+## ⚙️ Getting Started
+
+Ready to run this project locally? Follow these simple steps:
 
 ### Prerequisites
 
-- Node.js (v18.18.0 or later recommended - check `package.json` engines if specified, otherwise general Next.js guidelines)
-- npm, yarn, or pnpm
+- [Node.js](https://nodejs.org/) (Version `18.18.0` or later recommended - check `package.json` for specific engine requirements)
+- npm, yarn, or pnpm (choose your preferred package manager)
 
 ### Installation
 
 1. **Clone the repository:**
-
    ```bash
-   git clone [https://github.com/recky-a/parai-web.git](https://github.com/recky-a/parai-web.git)
+   git clone https://github.com/recky-a/parai-web.git
    cd parai-web
    ```
 
-2. **Install dependencies** (as per `package.json` and `package-lock.json`):
-   Using npm:
+2.  **Install dependencies:**
 
-   ```bash
-   npm install
-   ```
+      - **Using npm:**
 
-   Or using yarn:
+        ```bash
+        npm install
+        ```
 
-   ```bash
-   yarn install
-   ```
+      - **Using yarn:**
 
-   Or using pnpm:
+        ```bash
+        yarn install
+        ```
 
-   ```bash
-   pnpm install
-   ```
+      - **Using pnpm:**
 
-## 🏃 Running the Project
+        ```bash
+        pnpm install
+        ```
 
-To run the development server (scripts from `package.json`):
+## 🏃 Running the Development Server
+
+To start the development server and see the magic happen:
 
 ```bash
 npm run dev
@@ -97,86 +113,114 @@ yarn dev
 pnpm dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+Open your browser and navigate to [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) to experience the Parai Resort website in development mode.
 
-Other available scripts:
+### Other Useful Commands:
 
-build: Builds the application for production.
-Bash
+  - **Build for Production:**
 
-npm run build
-start: Starts a Next.js production server.
-Bash
+    ```bash
+    npm run build
+    ```
 
-npm run start
-lint: Runs ESLint to check for code quality and style issues.
-Bash
+  - **Start Production Server:**
 
-npm run lint
-📂 Folder Structure
-A brief overview of the main project directories based on the uploaded files:
+    ```bash
+    npm run start
+    ```
+
+  - **Run ESLint:**
+
+    ```bash
+    npm run lint
+    ```
+
+## 📂 Project Structure
+
+Here's a quick look at the main directories and their purpose:
+
+```
 parai-web/
-├── app/ # Next.js App Router: Pages, layouts, global CSS
-│ ├── booking/ # Booking page and related components
-│ ├── fasilitas/ # Facilities page
-│ ├── galeri/ # Gallery page
-│ ├── kamar-suite/ # Rooms & Suites listing page
-│ ├── kontak-kami/ # Contact Us page
-│ ├── globals.css # Global styles
-│ ├── layout.tsx # Root layout
-│ └── page.tsx # Homepage
-├── components/ # Reusable UI components
-│ ├── global/ # Global components (Navbar, Footer, WhatsAppFAB, NewsletterSignup)
-│ ├── sections/ # Components specific to page sections (Hero, About, Testimonials)
-│ │ └── beranda/ # Homepage specific sections
-│ ├── ui/ # Shadcn UI components (Button, Card, Carousel, Dialog, etc.)
-│ ├── mode-toggle.tsx # Dark/Light mode toggle
-│ └── theme-provider.tsx # Theme provider for Next-Themes
-├── lib/ # Utility functions and data
-│ ├── data.ts # Static data (room info, testimonials, gallery images, nav links)
-│ └── utils.ts # Utility functions (e.g., cn for classnames)
-├── public/ # Static assets (images, fonts, etc. - typically)
-├── .github/ # (Recommended) GitHub specific files (issue templates, PR templates)
-├── next.config.ts # Next.js configuration (includes image remote patterns)
-├── package.json # Project dependencies and scripts
-├── tsconfig.json # TypeScript configuration
-├── eslint.config.mjs # ESLint configuration
-├── postcss.config.mjs # PostCSS configuration (for Tailwind CSS)
-├── components.json # Shadcn UI configuration
-└── README.md # This file
+├── app/
+│   ├── booking/         # Booking page and related components
+│   ├── fasilitas/       # Facilities page
+│   ├── galeri/         # Gallery page
+│   ├── kamar-suite/     # Rooms & Suites listing page
+│   ├── kontak-kami/     # Contact Us page
+│   ├── globals.css     # Global styles
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Homepage
+├── components/
+│   ├── global/         # Global components (Navbar, Footer, WhatsAppFAB, NewsletterSignup)
+│   ├── sections/       # Page-specific section components
+│   │   └── beranda/    # Homepage specific sections
+│   ├── ui/             # Reusable UI components (Shadcn UI)
+│   ├── mode-toggle.tsx # Dark/Light mode toggle
+│   └── theme-provider.tsx # Theme provider for Next-Themes
+├── lib/
+│   ├── data.ts         # Static data (rooms, testimonials, gallery, navigation)
+│   └── utils.ts        # Utility functions (e.g., class name merging)
+├── public/           # Static assets (images, fonts)
+├── .github/          # (Recommended) GitHub specific files
+├── next.config.ts    # Next.js configuration
+├── package.json      # Project dependencies and scripts
+├── tsconfig.json     # TypeScript configuration
+├── eslint.config.mjs  # ESLint configuration
+├── postcss.config.mjs # PostCSS configuration (Tailwind CSS)
+├── components.json   # Shadcn UI configuration
+└── README.md         # This very file!
+```
 
-🖼️ Screenshots
+## 🖼️ Screenshots
 
-Homepage:
-Description: Main landing page with hero carousel and introductory sections.
+Get a visual taste of the website:
 
-Kamar & Suite Page:
-Description: Listing of available rooms and suites with images and details.
+**Homepage:**
 
-Booking Page:
-Description: Interface for checking room availability and making a booking.
+> Description: The main landing page featuring a captivating hero carousel and introductory sections.
 
-Galeri Page (Mobile View):
-Description: Photo gallery showcasing the resort, viewed on a mobile device.
+**Kamar & Suite Page:**
 
-🤝 Contributing
-Contributions are welcome! If you have suggestions for improvements or want to report a bug, please follow these steps:
+> Description: A detailed listing of our available rooms and suites, complete with images and essential information.
 
-Fork the Project.
-Create your Feature Branch (git checkout -b feature/AmazingFeature).  
-Commit your Changes (git commit -m 'Add some AmazingFeature').
-Push to the Branch (git push origin feature/AmazingFeature).
-Open a Pull Request.
+**Booking Page:**
 
-Please ensure your code adheres to the project's linting rules (run npm run lint).
-For more detailed guidelines, please see CONTRIBUTING.md
+> Description: The user-friendly interface for checking room availability and initiating the booking process.
 
-📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+**Galeri Page (Mobile View):**
 
-🙏 Acknowledgements
-Shadcn UI for the fantastic component library.
-Lucide React for the clean and beautiful icons.
-Unsplash and other image sources used for placeholder/demo images.
-The Next.js and React teams for their powerful frameworks.
-Vercel for deployment.
+> Description: A glimpse of the resort's beauty showcased in a mobile-responsive photo gallery.
+
+## 🤝 Contributing
+
+We welcome contributions\! If you have ideas for improvements or encounter any bugs, please follow these guidelines:
+
+1.  **Fork the Project** on GitHub.
+2.  **Create your Feature Branch:** `git checkout -b feature/YourAmazingFeature`
+3.  **Commit your Changes:** `git commit -m 'Add some AmazingFeature'`
+4.  **Push to the Branch:** `git push origin feature/YourAmazingFeature`
+5.  **Open a Pull Request** on the main repository.
+
+Please ensure your code adheres to our linting rules by running `npm run lint` before submitting your pull request. For more detailed contribution guidelines, consider adding a `CONTRIBUTING.md` file.
+
+## 🌱 Community, Support & Contribution
+
+We aim to foster a welcoming and collaborative community.
+-   **Support:** For help with the project, please see our [Support Guidelines](./.github/SUPPORT.md).
+-   **Contributing:** We welcome contributions! Please read our [Contributing Guidelines](./.github/CONTRIBUTING.md).
+-   **Code of Conduct:** All participants are expected to uphold our [Code of Conduct](./.github/CODE_OF_CONDUCT.md).
+-   **Security:** To report a security vulnerability, please follow our [Security Policy](./.github/SECURITY.MD).
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the [`LICENSE`](https://www.google.com/search?q=LICENSE) file for more details.
+
+## 🙏 Acknowledgements
+
+We extend our sincere gratitude to the following open-source projects and communities that made this web experience possible:
+
+  - [Shadcn UI](https://ui.shadcn.com/) for the incredible collection of accessible and composable UI components.
+  - [Lucide React](https://lucide.dev/) for the beautiful and consistent icon library.
+  - [Unsplash](https://unsplash.com/) and other image sources for providing stunning placeholder and demo images.
+  - The [Next.js](https://nextjs.org/) and [React](https://reactjs.org/) teams for their powerful and developer-friendly frameworks.
+  - [Vercel](https://vercel.com/) for providing excellent deployment services.
