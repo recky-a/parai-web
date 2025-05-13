@@ -1,5 +1,6 @@
-// app/booking/page.tsx
 "use client";
+
+export const dynamic = "force-dynamic";
 
 import { useState, FormEvent, useEffect } from "react";
 import { Button } from "@/components/ui/button";
