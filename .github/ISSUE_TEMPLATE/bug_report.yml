@@ -1,0 +1,75 @@
+name: 🐞 Bug Report
+description: Create a report to help us improve the Parai Web project.
+title: "[BUG] - A brief description of the bug"
+labels: ["bug", "needs-triage"]
+assignees:
+  - recky-a # Assign to yourself or relevant maintainers
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+        Please provide as much detail as possible.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of what the bug is.
+      placeholder: "e.g., When I click on the 'Booking Sekarang' button on the homepage, nothing happens."
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the issue? Please provide clear steps.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: "e.g., I expected to be redirected to the /booking page."
+    validations:
+      required: true
+  - type: input
+    id: affected-page
+    attributes:
+      label: Affected Page(s)
+      description: Which page(s) of the website are affected? (e.g., Homepage, Booking, Kamar & Suite)
+      placeholder: "e.g., Homepage, /booking"
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser(s) are you seeing the problem on?
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Opera
+        - Other (please specify in additional context)
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      placeholder: "e.g., Windows 11, macOS Sonoma, Android 13"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Screen Recordings
+      description: If applicable, add screenshots or a screen recording to help explain your problem. You can drag and drop files here.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here (e.g., device type, network conditions).
