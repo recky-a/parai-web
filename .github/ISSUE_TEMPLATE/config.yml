@@ -1,0 +1,8 @@
+blank_issues_enabled: false # Or true if you want to allow blank issues alongside templates
+contact_links:
+  - name: ❓ Parai Web Project Questions & Discussions
+    url: https://github.com/recky-a/parai-web/discussions # Enable GitHub Discussions for this
+    about: Please ask and answer questions about the project development here.
+  - name: 🏨 Parai Beach Resort & Spa - Official Inquiries
+    url: https://parai-web.vercel.app/kontak-kami # Link to your resort's contact page
+    about: For direct inquiries about bookings, facilities, or resort services.
