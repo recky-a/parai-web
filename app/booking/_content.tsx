@@ -135,7 +135,7 @@ const BookingContent = () => {
                       mode="single"
                       selected={checkInDate}
                       onSelect={setCheckInDate}
-                      initialFocus
+                      autoFocus
                       disabled={(date) =>
                         date < new Date(new Date().setHours(0, 0, 0, 0))
                       } // Disable tanggal sebelum hari ini
