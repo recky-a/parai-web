@@ -11,8 +11,8 @@ Welcome to the official repository for the Parai Beach Resort & Spa website! Thi
 The live deployed version can be viewed at: [https://parai-web.vercel.app/](https://parai-web.vercel.app/)
 
 <p align="center">
-  <img src="YOUR_HOMEPAGE_SCREENSHOT_URL_HERE" alt="Parai Resort Homepage Showcase" width="700"/>
-  <em><p align="center">Replace with a screenshot of your homepage from https://parai-web.vercel.app/</p></em>
+   <img src="public/images/screenshots/homepage.png" alt="Parai Resort Homepage Showcase">
+  <em><p align="center">*Tampilan Halaman Utama Parai Resort*</p></em>
 </p>
 
 ## ✨ Features
@@ -62,7 +62,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. **Clone the repository:**
 
    ```bash
-   git clone [https://github.com/your-username/parai-web.git](https://github.com/your-username/parai-web.git)
+   git clone [https://github.com/recky-a/parai-web.git](https://github.com/recky-a/parai-web.git)
    cd parai-web
    ```
 
