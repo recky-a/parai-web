@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider"; // Buat komponen ini
+import {Analytics} from "@vercel/analytics/next";
 import { Navbar } from "@/components/global/Navbar";
 import { Footer } from "@/components/global/Footer";
 import { WhatsAppFAB } from "@/components/global/WhatsAppFAB";
@@ -44,6 +45,7 @@ export default function RootLayout({
           <Footer />
           <WhatsAppFAB />
         </ThemeProvider>
+<Analytics/>
       </body>
     </html>
   );
